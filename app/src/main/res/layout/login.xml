@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#95AEAB"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Robot App Ind. Study"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+
+    <EditText
+        android:id="@+id/robot_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Ip Address"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:id="@+id/robot_port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Port #"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:id="@+id/robot_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Authentication Code"
+        android:layout_margin="10dp"
+        />
+
+    <Button
+        android:id="@+id/connect_robot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect to Robot"
+        android:layout_gravity="center"
+        android:onClick="Connect_To_Robot"
+        />
+
+</LinearLayout>

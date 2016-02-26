@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/data_log"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Data Log"
+            />
+        <item
+            android:id="@+id/data_graph"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Line Graph" />
+        <item
+            android:id="@+id/data_data"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Data Panel" />
+    </group>
+
+</menu>

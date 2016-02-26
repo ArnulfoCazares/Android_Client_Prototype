@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BB6B6B"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Control Panel"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:id="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Up"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/button_up"
+        android:layout_above="@+id/button_down"
+        android:layout_toRightOf="@+id/button_left"
+        android:layout_toEndOf="@+id/button_left" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reverse"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/button_down"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="79dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Right"
+        android:id="@+id/button_right"
+        android:layout_alignTop="@+id/button_down"
+        android:layout_toRightOf="@+id/button_down"
+        android:layout_toEndOf="@+id/button_down" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Left"
+        android:id="@+id/button_left"
+        android:layout_alignTop="@+id/button_down"
+        android:layout_toLeftOf="@+id/button_down"
+        android:layout_toStartOf="@+id/button_down" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send App Log"
+        android:id="@+id/app_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/robot_button"
+        android:layout_alignEnd="@+id/robot_button" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Robot Log"
+        android:id="@+id/robot_button"
+        android:layout_below="@+id/app_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Graph Entry"
+        android:id="@+id/graph_button"
+        android:layout_below="@+id/robot_button"
+        android:layout_alignRight="@+id/robot_button"
+        android:layout_alignEnd="@+id/robot_button" />
+
+</RelativeLayout>
